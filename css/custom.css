@@ -19,8 +19,9 @@ background-color: #3AB8DB;
             color: #fff;
             background-color: #0659B3;
             background-image: url(../img/kalnas.jpg);
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; - panaudojus background-size: cover, repeat'as netenka prasmes*/
             background-size: cover;
+            background-position: center;
         }
             h1 {
             }
@@ -45,12 +46,18 @@ background-color: #3AB8DB;
                 display: inline-block;
                 width: 60px;
                 height: 60px;
-                font-size: 30px;
+                font-weight: 100px;
+                font-size: 50px;
                 text-align: center;
+                color: #777;
                 line-height: 54px;
                 position: absolute;
                 top: 0px;
                 right: 0px;
+                transform-origin: center;
+                transform: rotate(45deg);
+                cursor: pointer;
+                font-family: 'Times New Roman', Times, serif;
             }
             .form {
                     display: inline-block;
